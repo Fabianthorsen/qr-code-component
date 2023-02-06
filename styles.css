@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-gray-light: hsl(212, 45%, 89%);
+  --color-blue-grayish: hsl(220, 15%, 55%);
+  --color-blue-dark: hsl(218, 44%, 22%);
+  --min-width: 375px;
+}
+
+body,
+html {
+  margin: 0;
+  min-width: var(--min-width);
+  background: var(--color-gray-light);
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 95vh;
+}
+
+.container .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-white);
+  height: 500px;
+  width: calc(var(--min-width) * 0.75);
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.card > img {
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.card > h1 {
+  font-size: 21px;
+  font-weight: 700;
+  margin: 25px 10px 10px 10px;
+  text-align: center;
+  color: var(--color-blue-dark);
+}
+
+.card > p {
+  font-weight: 500;
+  margin: 10px;
+  text-align: center;
+  color: var(--color-blue-grayish);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.attribution {
+  color: var(--color-blue-dark);
+  width: 75%;
+  text-align: center;
+  font-size: 10px;
+}
